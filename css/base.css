@@ -1,0 +1,63 @@
+/* global remove user-agent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* custom vars */
+:root {
+  --clr-primary: #f1e5d4;
+  --clr-secondary: #5e2f22;
+  --clr-terciary: #fdae33;
+
+  --clr-text-white: #fff;
+  --clr-title-dark: #484848;
+  --clr-text: #696969;
+
+  --fnt-title: 'Merriweather', serif;
+  --fnt-text: 'Open Sans', sans-serif;
+}
+
+/* user-agent font-size is 16px, let's make it responsive */
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; /* 15px */
+  }
+}
+
+@media (max-width: 970px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 75%; /* 12px */
+  }
+}
+
+@media (max-width: 590px) {
+  :root {
+    font-size: 62.25%; /* 10px */
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,li{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

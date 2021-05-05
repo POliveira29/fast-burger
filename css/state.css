@@ -1,0 +1,44 @@
+.scroll-disabled {
+  overflow-y: hidden;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.header__menu.active {
+  position: fixed;
+  right: 15px;
+  z-index: 3;
+}
+
+.menu-bar.active {
+  background-color: transparent;
+}
+
+.menu-bar.active::after {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.menu-bar.active::before {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.header__nav.active {
+  transform: translateY(0px);
+}
+
+.nav-item.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.nav-item--active{
+  color: var(--clr-terciary);
+}

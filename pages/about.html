@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--   META TAGS   -->
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Instrua o Internet Explorer a usar seu mais recente engine de renderização -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Document Title. Page Title less than 55 character -->
+    <title>Fast Burger - Food Truck</title>
+    <meta name="description"
+        content="Aqui deve ser colocado a descrição da página. Essa descrição ira aparecer na pesquisa do buscador. Uma meta description otimizada contém entre 120 e 130 caracteres e vai direto ao ponto." />
+    <!-- Basicamente são atalhos para que o Googlebot atue com maior precisão e velocidade sobre uma página na web. Por exemplo, para facilitar a indexação de uma página, usa-se o comando “index”. -->
+    <meta name="robots" content="index">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://exemplo.com/pagina.html">
+    <meta property="og:title" content="Título do Conteúdo">
+    <meta property="og:image" content="https://exemplo.com/imagem.jpg">
+    <meta property="og:description" content="Descrição Aqui">
+    <meta property="og:site_name" content="Fast Burger">
+    <meta property="og:locale" content="pt_BR">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/favico.png">
+    <!-- Apple Touch Icon (pelo menos 200x200px) -->
+    <link rel="apple-touch-icon" href="/custom-icon.png">
+    <!-- Para rodar a aplicação web em tela cheia -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Estilo da Barra de Status (veja as Meta Tags suportadas abaixo para valores disponíveis) -->
+    <!-- Não tem efeito nenhum se você não tiver a meta tag anterior -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/state.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.min.css">
+    <script src="https://kit.fontawesome.com/0e0d5749fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-barba="wrapper">
+    <header class="header">
+        <a href="/index.html" class="header__logo">
+            <img src="../img/logo-mobile.svg" alt="Logo Fast Burger">
+        </a>
+        <button class="header__menu" aria-label="menu">
+            <span class="menu-bar"></span>
+        </button>
+    </header>
+    <div class="overlay-menu">
+        <a href="/index.html" class="menu-logo">
+            <img src="../img/logo-mobile.svg" alt="Logo Fast Burger">
+        </a>
+        <nav class="header__nav" role="navigation">
+            <a href="./fast-burgers.html" class="nav-item">Fast Burgers</a>
+            <a href="./menu.html" class="nav-item">Cardápio</a>
+            <a href="./about.html" class="nav-item nav-item--active">Os Fasts</a>
+            <a href="./contact.html" class="nav-item">Contato</a>
+        </nav>
+    </div>
+    <main class="space-lg" data-barba="container">
+        <div class="container">
+            <section class="menu space-lg">
+                <div id="menu-gallery" style="display:none;">
+                    <img alt="" src="../img/hero-desktop-2.jpg" data- image="../img/menu-1.jpg"
+                        data-description="Image 1">
+
+                    <img alt="" src="../img/card-food-truck.jpg" data-image="../img/menu-2.jpg"
+                        data-description="Image 2">
+
+                    <img alt="" src="../img/gallery-4.jpg" data-image="../img/menu-3.jpg" data-description="Image 3">
+
+                    <img alt="" src="../img/gallery-6.jpg" data-image="../img/menu-4.jpg" data-description="Image 4">
+                </div>
+            </section>
+            <section class="creators space-lg">
+                <div class="creators__content">
+                    <h2 class="creators__name">Érico Saraiva</h2>
+                    <p class="creators__about">Nascido em São Paulo, filho de arabes, casado com uma
+                        colombiana.Formou-se no Estados Unidos e trabalhou em diversos restaurantes como Halls
+                        Chophouse, Pappas Bros e Johnny Rockets.Encontrou no interior um excelente local para seu
+                        negócio e foi onde conheceu o Cauã.<br><br>
+                        Fast desde 2017 com uma paixão pelo que faz. Frenquentemente presente na hamburgueria, sempre
+                        preocupado com a qualidade e a felicidade dos clientes.
+                    </p>
+                </div>
+                <img class="creators__image" src="/img/fasts-about.jpg" alt="Criadores do Fast">
+                <div class="creators__content creators__content--align">
+                    <h2 class="creators__name">Cauã Esteves</h2>
+                    <p class="creators__about">Nos 10 anos que viveu na Alemanha, trabalhou nos restaurantes Atschel,
+                        The Bird e Burgerlich. Foi sócio-proprietário do extinto BBurgers, e posteriormente optou por
+                        vivenciar um estágio na Tapas 24, em Barcelona.<br><br>
+                        Conheceu o Érico e juntos montaram o Fast. Sua marca é assegurar o cuidado e a essência na
+                        entrega dos pratos.
+
+                    </p>
+                </div>
+            </section>
+        </div>
+        <section class="mission">
+            <img class="mission__logo" src="/img/logo-mobile-light.svg" alt="Logo Fast Burger">
+            <p class="mission__text">
+                Nossa missão é servir comida rápida de boa qualidade, nas ruas, na loja até a sua casa.
+            </p>
+        </section>
+        <section class="participation">
+            <h2 class="participation__title">Participações</h2>
+            <i class="far fa-star"></i>
+            <span class="participation__events">Encontro de carros antigos 2019</span>
+            <span class="participation__events">15ª Edição da prova de pedestre Unimed 2019</span>
+            <span class="participation__events">12º GAC Corrida Barão de Jundiahy 2019</span>
+            <span class="participation__events">Festival Truck 2018</span>
+            <span class="participation__events">Burger Festival 2017</span>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__social-media">
+            <a href="#" class="media-facebook"></a>
+            <a href="#" class="media-instagram"></a>
+        </div>
+        <div class="footer__info">
+            <span class="info-title">Fast Burger</span>
+            <span class="info-subtitle">Endereço</span>
+            <p>
+                <span class="info-adress">Av. Odila Azalim, 558</span><br>
+                <span>Delivery - <strong>pelo Ifood</strong></span>
+            </p>
+            <div class="schedule">
+                <span class="schedule__title">Horário de Almoço</span>
+                <span><strong>Terça <small>à</small> Sexta:</strong> das 12h às 14h</span>
+                <span><strong>Sábado <small>e</small> Domingo:</strong> das 13h às 16h</span>
+            </div>
+            <div class="schedule">
+                <span class="schedule__title">Horário de Janta</span>
+                <span><strong>Terça <small>à</small> Sexta: </strong> das 18h às 22h</span>
+                <span><strong>Sábado <small>e</small> Domingo:</strong> das 18h às 00h</span>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <span>&copy; Fast Burger - Todos os direiros reservados - desde 2017</span>
+        </div>
+    </footer>
+    <div class="back-to-top">
+        <a class="btn-top" type="button" data-event="scrollTop"></a>
+    </div>
+    <div class="loader"></div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.min.js"></script>
+    <script src="/js/header-menu.js"></script>
+    <script src="/js/menu-gallery.js"></script>
+    <script src="/js/scrollToTop.js"></script>
+</body>
+
+</html>

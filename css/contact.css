@@ -1,0 +1,79 @@
+.horary {
+  font-family: var(--fnt-title);
+  color: var(--clr-secondary);
+}
+
+.horary__title {
+  font-size: 4rem;
+  text-align: right;
+  text-decoration: none;
+}
+
+.horary-list {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  font-family: var(--fnt-text);
+}
+
+.horary-list h2 {
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+#localization {
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+
+.talk {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  margin-top: 4rem;
+  font-family: var(--fnt-text);
+  background-color: var(--clr-secondary);
+}
+
+.talk__title {
+  margin-bottom: 3em;
+  font-size: 2.2rem;
+  color: var(--clr-primary);
+}
+
+.talk__subtitle {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: var(--clr-primary);
+}
+
+.talk__contact {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--clr-terciary);
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .horary__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .horary-list {
+    width: 40%;
+    text-align: right;
+    font-size: 1.2rem;
+  }
+  .horary-list--align {
+    text-align: left;
+  }
+}

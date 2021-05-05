@@ -1,0 +1,84 @@
+.menu__list figure {
+  margin: 1rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--fnt-text);
+  color: var(--clr-secondary);
+}
+
+.menu__title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+  margin: 6rem 0;
+  text-transform: uppercase;
+  font-family: var(--fnt-text);
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+}
+
+.carte__download {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  font-family: var(--fnt-text);
+  color: var(--clr-secondary);
+}
+
+.qrcode-text {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.qrcode {
+  width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu__title::after,
+  .menu__title::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 3rem;
+    height: 4.5rem;
+    clip-path: polygon(100% 50%, 0px 0px, 0px 100%);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  .menu__title::after {
+    left: -10px;
+  }
+  .menu__title::before {
+    right: -10px;
+    transform: rotate(180deg);
+  }
+  .menu__list {
+    display: flex;
+    justify-content: center;
+  }
+  .figure-fit {
+    width: 40%;
+  }
+  .burgers__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .carte {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

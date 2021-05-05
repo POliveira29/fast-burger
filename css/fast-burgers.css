@@ -1,0 +1,40 @@
+.hero__content {
+  text-align: center;
+  text-transform: unset;
+  font-size: 2.2rem;
+  color: var(--clr-secondary);
+}
+
+.hero__content strong {
+  font-weight: 700;
+  font-family: var(--fnt-title);
+}
+
+.menu__logo {
+  position: relative;
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10rem;
+  }
+  .card-title {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .card-description {
+    position: absolute;
+    left: -12px;
+    bottom: -110px;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: left;
+  }
+}

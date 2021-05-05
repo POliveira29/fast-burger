@@ -1,0 +1,15 @@
+.container {
+  padding: 0 1rem;
+}
+
+.space-sm{
+  margin-top: 2rem;
+}
+
+.space-lg{
+  margin-top: 10rem;
+}
+
+.space-xlg{
+  margin-top: 13rem;
+}
